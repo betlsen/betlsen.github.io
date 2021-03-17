@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!--bunu neden yazdım bilmiyorum-->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" type="text/css" href="btlc.css">
 		
 	</head> 
@@ -11,42 +11,33 @@
 		<div id="anakisim">
 			<header id="site_adi">
 				<img src="logo.svg" width="126" height="auto" alt="logo"/>
-				<h1> ARCHILOG </h1>
-				<p2> A Common Architectural Journal </p2>
+				<h1> BETLSEN </h1>
+				<p2> Deneme 1 2 3 </p2>
 				<div style="clear: left;"></div>
 			</header>
 			<nav id="menu">
 				<ul>
-					<li> <a href="#">Blog Yazısı Gönderin</a></li>
-					<li> <a href="#">Geçmiş Etkinlikler</a></li>
-					<li> <a href="#">Blog Yazıları-2020</a></li>
-					<li> <a href="#">Sizden Gelenler </a></li>
-					<li> <a href="#">Arşiv</a></li>
+					<li> <a href="#">başlık1</a></li>
+					<li> <a href="#">başlık2</a></li>
+					<li> <a href="#">başlık3</a></li>
 				</ul>
 			</nav>
 			<aside id="postlar">
-				<details>
-					<summary>Giriş</summary>
-					<form>
-						<p><input type:"text" name:"username" id:"username" placeholder="Kullanıcı Adı"/></p>
-						<p><input type:"password" name:"pass" id:"pass" placeholder="Şifre"/></p>
-						<input type="submit" name:"login" id:"login"/>
-					</form>
-				</details>
+
 				<ul>
-					<li> <a href="#">Haberler</a></li>
-					<li> <a href="#">Etkinlikler</a></li>
-					<li> <a href="#">Galeri</a></li>
-					<li> <a href="#">Hakkımızda </a></li>
-					<li> <a href="#">İletişim</a></li>
+					<li> <a href="#">bla</a></li>
+					<li> <a href="#">blabla</a></li>
+					<li> <a href="#">blablabla</a></li>
+					<li> <a href="#">blablablabla </a></li>
+					<li> <a href="#">blablabblalabla</a></li>
 				</ul>
 				
 			</aside>
 			<section id="olay">
 				<header>
-					<h2> BLOG YAZISI GÖNDERİN </h2>
+					<h2> NELER YAZSAM </h2>
 					
-					Yayınlanmasını istediğiniz blog yazılarınızı bize gönderebilirsiniz.
+					Hello World diyelim
 				</header>
 				<form action="#" enctype="multipart/form-data" method="post">
 					<p><input id="baslik1" type="text" placeholder="AD-SOYAD">
@@ -66,37 +57,10 @@
 						<p id="card-paragraph">Architect & Engineer</p>
 					</div>
 				</div>
-				<script>
-					function readURL(input) {
-					if (input.files && input.files[0]) {
-						var reader = new FileReader();
-						$( "#foto" ).addClass( "display" );
-						reader.onload = function (e) {
-							$('#foto').attr('src', e.target.result);
-						}
-						reader.readAsDataURL(input.files[0]);
-					}
-				}
-				$("#myFile").change(function(){
-					readURL(this);
-				});
-				$("#sendbutton").click(function(){
-					$("#card-header").text("");
-					$("#card-paragraph").text("");
-					$("[id=foto]:eq(1)").remove();
-					$("#card-header").text($("#baslik1").val());
-					$("#card-header2").text($("#baslik11").val());
-					$("#card-header3").text($("#baslik2").val());
-					$("#card-paragraph").text($("#paragraf").val());
-					var $img = $("#foto").clone();
-					$(".card").append($img);
-					$("[id=foto]:eq(0)").attr("src","http://placehold.it/180");
-					$(".card").show();
-				});
-				</script>
+
 			</section>
 			<footer id="alt_yazi">
-				Created by Betül Şen for Depixen Casestudy
+				Created by Betül Şen
 				<div style="clear: left;"></div>
 			</footer>
 		</div>
